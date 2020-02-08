@@ -83,11 +83,13 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 		for(int i = 0; i < cells.length; i++) {
 			for(int j = 0; j < cells[i].length; j++) {
 				cells[i][j].draw(g);
-			}
-		}
+			
+		
 		// draws grid
 		g.setColor(Color.BLACK);
 		g.drawRect(0, 0, getWidth() - 1, getHeight() - 1);
+			}
+		}
 	}
 	
 	//advances world one step
